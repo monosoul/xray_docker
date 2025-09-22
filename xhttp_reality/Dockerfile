@@ -31,7 +31,7 @@ ENV TZ=Asia/Shanghai
 WORKDIR /
 
 COPY ./entrypoint.sh /
-COPY ./config.json /
+COPY ./config.json /config/
 
 COPY --from=builder /app/xray /
 
